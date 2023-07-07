@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "id": "drakoshatosha",
+  "id": "uxushud",
   "version": "1.19.2",
 
-  "name": "DrakoshaTosha",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "UxusHud",
+  "description": "Mod for custom hud",
   "authors": [
-    "Me!"
+    "uxokpro1234"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
@@ -19,11 +19,11 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.uxus.sprint.DrakoshaTosha"
+      "com.uxus.hud.UxusHud"
     ]
   },
   "mixins": [
-    "sprint.mixins.json"
+    "uxus.mixins.json"
   ],
 
   "depends": {

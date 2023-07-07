@@ -1,0 +1,23 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.uxus.hud.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+  ],
+  "client": [
+    "hudMixin",
+    "MixinGameRenderer",
+    "MixinEntityRenderDispatcher",
+    "DownloadingTerrainScreenMixin",
+    "MixinNetworkPlayHandler",
+    "PotHud",
+    "AccessorMinecraftClient",
+    "CameraMixin",
+    "ScreenMixin",
+    "MixinMinecraftClientStop"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
