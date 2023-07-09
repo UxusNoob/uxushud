@@ -57,7 +57,7 @@ public class UxusHud implements ModInitializer {
 	private static KeyBinding SPRINT_KEY_BINDING;
 
 	public static HudEditor hudEditor = new HudEditor();
-	public static final Logger LOGGER = LoggerFactory.getLogger("DrakoshaTosha");
+	public static final Logger LOGGER = LoggerFactory.getLogger("Uxushud");
 ;
 
 	public static final KeyBinding Gui = KeyBindingHelper.registerKeyBinding(
@@ -65,7 +65,7 @@ public class UxusHud implements ModInitializer {
 					"key.uxus.sprint",
 					InputUtil.Type.KEYSYM,
 					GLFW.GLFW_KEY_UNKNOWN,
-					"key.categories.gameplay"
+					"Uxushud"
 			)
 	);
 
@@ -79,8 +79,7 @@ public class UxusHud implements ModInitializer {
 
 		this.loadConfig();
 
-		// Access the configuration values
-		LOGGER.info("Nohurtcam: " + nohurtcam);
+		/**LOGGER.info("Nohurtcam: " + nohurtcam);
 		LOGGER.info("PotHud: " + pothud);
 		LOGGER.info("PotHudY: " + pothudy);
 
@@ -107,7 +106,7 @@ public class UxusHud implements ModInitializer {
 		LOGGER.info("NoGuiBg: " + noguibg);
 		LOGGER.info("SaturationHud: " + saturationhud);
 
-		LOGGER.info("Color: " + color);
+		LOGGER.info("Color: " + color); **/
 
 
 		ClientLifecycleEvents.CLIENT_STARTED.register(client -> {
@@ -148,7 +147,6 @@ public class UxusHud implements ModInitializer {
 		int screenWidth = client.getWindow().getScaledWidth();
 		int screenHeight = client.getWindow().getScaledHeight();
 
-		// Render the custom HUD element
 		HungerSaturationHUD.render(matrices, screenHeight);
 	}
 
@@ -226,9 +224,6 @@ public class UxusHud implements ModInitializer {
 			case "SprintToggledY":
 				sprinthudy = Integer.parseInt(value);
 				break;
-			/*case "ChatSprintToggledX":
-				chatsprinthudx = Integer.parseInt(value);
-				break;*/
 			case "TpsX":
 				tpsx = Integer.parseInt(value);
 				break;

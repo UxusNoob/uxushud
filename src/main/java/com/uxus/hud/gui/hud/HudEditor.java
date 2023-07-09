@@ -11,8 +11,6 @@ public class HudEditor extends Screen {
 
     public HudEditor() {
         super(Text.of("HUD EDITOR"));
-        isDragging = false;
-        isDraggingf = false;
 
     }
 
